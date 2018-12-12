@@ -19,10 +19,10 @@ public class Greeter {
         name = name.toLowerCase();
         if(name.equals(PROMISE) || name.equals(TOBA)){
             if(name.length() == 4){
-                return "Toba!!";
+                return "toba!!";
             }
             else {
-                return "Promise!!";
+                return "promise!!";
             }
         }
         else if(name.equals(LEKE)){
