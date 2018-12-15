@@ -3,9 +3,9 @@ package conditionals;
 import java.util.Scanner;
 public class Greeter {
 
-    private final String TOBA = "toba";
-    private final String PROMISE = "promise";
-    private final String LEKE = "leke";
+    final String TOBA = "toba";
+    final String PROMISE = "promise";
+    final String LEKE = "leke";
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -15,7 +15,7 @@ public class Greeter {
         System.out.println(greeter.greet(input.nextLine()));
     }
 
-    public String greet(String name){
+    private String greet(String name){
         name = name.toLowerCase();
         if(name.equals(PROMISE) || name.equals(TOBA)){
             if(name.length() == 4){
